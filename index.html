@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.html">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".gnb>li").mouseenter(function(){
+                $(this).children(".sub").stop().slideDown();
+            });
+            $(".gnb>li").mouseleave(function(){
+                $(this).children(".sub").stop().slideUp();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="header">
+        <h1 class="logo">logo</h1>
+        <ul class="gnb clearFix">
+            <li><a href="#">브랜드</a>
+            <ul class="sub ">
+                <li><a href="#">Abuot DORCO mychef</a></li>
+                <li><a href="#">도루코 마이셰프 캠페인</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">지난 樂캠페인</a></li>
+            </ul>
+            </li>
+            <li><a href="#">제품</a>
+            <ul class="sub">
+                <li><a href="#">신제품소개</a></li>
+                <li><a href="#">칼</a></li>
+                <li><a href="#">가위</a></li>
+                <li><a href="#">냄비</a></li>
+            </ul>
+            </li>
+            <li><a href="#">이벤트</a>
+            <ul class="sub">
+                <li><a href="#">진행중 이벤트</a></li>
+                <li><a href="#">쇼핑 기획전</a></li>
+            </ul>
+            </li>
+            <li><a href="#">고객센터</a>
+            <ul class="sub">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">매장안내</a></li>
+            </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="section">
+        <div class="main"></div>
+        <div class="product">
+            <h1 class="title">mychef Product</h1>
+            <p>도루코 마이셰프의 다양한 제품을 만나보세요</p>
+            <ul class="con_box">
+                <li class="box1"></li>
+                <li class="box2"></li>
+                <li class="box3"></li>
+                <li class="box4"></li>
+                <li class="box5"></li>
+                <li class="box6"></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
